@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_top_search"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/color_0"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/ed_search"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/radius_bg"
+            android:drawableLeft="@mipmap/iv_search_normal"
+            android:drawablePadding="4dp"
+            android:hint="请输入关键字"
+            android:paddingLeft="4dp"
+            android:textSize="14dp" />
+
+    </LinearLayout>
+
+    <com.inu.alphaaddrbook.view.ContactRecyclerView
+        android:id="@+id/contact_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll_top_search"/>
+
+</RelativeLayout>
